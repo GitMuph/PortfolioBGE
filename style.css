@@ -54,7 +54,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 550px;
+  width: 650px;
+  font-size: 16px;
+}
+@media all and (min-width: 1500px){
+  .menu{
+  width: 900px;
+  font-size: 20px;
+}
 }
 .menu li a:hover{
   border-bottom: solid 3px #3e2093;
