@@ -38,8 +38,13 @@ nav {
 
 .logo {
   font-size: 3rem;
+   margin-left: 100px;  
 }
-
+@media all and (max-width: 991px){
+  .logo{
+    margin-left: 0px;
+  }
+}
 .toggle {
   display: none;
 }
