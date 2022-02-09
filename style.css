@@ -13,6 +13,9 @@ background-color: rgb(31, 31, 31);
 
 }
 
+.fa-product-hunt{
+  color: #fff;
+}
 header {
   position: fixed;
   width: 100%;
@@ -34,7 +37,7 @@ nav {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .toggle {
