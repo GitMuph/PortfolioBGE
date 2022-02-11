@@ -1,4 +1,26 @@
-/* menu */
+ /* anim carte */
+
+let playing = false;
+let card = document.querySelector(".card");
+
+card.addEventListener('click',function() {
+  if(playing)
+    return;
+  
+  playing = true;
+  anime({
+    targets: card,
+    scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+    rotateY: {value: '+=180', delay: 200},
+    easing: 'easeInOutSine',
+    duration: 400,
+    complete: function(anim){
+       playing = false;
+    }
+  });
+});
+ 
+ /* menu */
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 
@@ -12,6 +34,7 @@ function hidemenu() {
   body.classList.toggle('open');
   
 }
+
 
 
 /*Anim titre changeant: jquery-3.6.0.min.js */
@@ -74,6 +97,8 @@ $(document).ready(function(){
 	});
 });
 
+/* sliders projets */
+
 $('.tempo').slick({
   arrows: false,
   dots:true,
@@ -87,7 +112,30 @@ $('.tempo2').slick({
   autoplay: true,
   speed:1000
 });
+/* jeu */
 
+var character =
+document.getElementById("character");
+var block = document.getElementById("block");
+function jump(){
+    if(character.classList != "animate"){
+    character.classList.add("animate");
+    }
+    setTimeout(function(){
+        character.classList.remove("animate");
+    },500);
+}
+var checkDead = setInterval(function(){
+    var characterTop =
+    parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var blockleft =
+    parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    if(blockleft<20 && blockleft>0 && characterTop>= 80){
+        block.style.animation = "none";
+        block.style.display = "none";
+        alert("t nul")
+    }
+},10);
 
 
 
