@@ -114,8 +114,7 @@ $('.tempo2').slick({
 });
 /* jeu */
 
-var character =
-document.getElementById("character");
+var character = document.getElementById("character");
 var block = document.getElementById("block");
 function jump(){
     if(character.classList != "animate"){
@@ -133,7 +132,7 @@ var checkDead = setInterval(function(){
     if(blockleft<20 && blockleft>0 && characterTop>= 80){
         block.style.animation = "none";
         block.style.display = "none";
-        alert("t nul")
+        alert("Jeu prêt")
     }
 },10);
 
