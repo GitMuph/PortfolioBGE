@@ -118,7 +118,7 @@ var character = document.getElementById("character");
 var block = document.getElementById("block");
 var rocket = document.getElementById("rocket");
 var star = document.getElementById("star");
-var basket = document.getElementById("basket");
+// var basket = document.getElementById("basket");
 function jump(){
     if(character.classList != "animate"){
     character.classList.add("animate");
@@ -132,11 +132,11 @@ var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue(
 var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 var rocketleft = parseInt(window.getComputedStyle(rocket).getPropertyValue("left"));
 var starleft = parseInt(window.getComputedStyle(star).getPropertyValue("left"));
-var basketleft = parseInt(window.getComputedStyle(basket).getPropertyValue("left"));
+// var basketleft = parseInt(window.getComputedStyle(basket).getPropertyValue("left"));
 
     if(blockleft<20 && blockleft>0 && characterTop>= 80){
-      basket.style.animation = "none";
-        basket.style.display = "none";
+      // basket.style.animation = "none";
+      //   basket.style.display = "none";
         block.style.animation = "none";
         block.style.display = "none";
         rocket.style.animation = "none";
@@ -146,8 +146,8 @@ var basketleft = parseInt(window.getComputedStyle(basket).getPropertyValue("left
         alert("Jeu prêt")
     }
     if(rocketleft<20 && rocketleft>0 && characterTop>= 80){
-      basket.style.animation = "none";
-        basket.style.display = "none";
+      // basket.style.animation = "none";
+      //   basket.style.display = "none";
       rocket.style.animation = "none";
       rocket.style.display = "none";
       block.style.animation = "none";
@@ -157,8 +157,8 @@ var basketleft = parseInt(window.getComputedStyle(basket).getPropertyValue("left
       alert("Jeu prêt")
     }
     if(starleft<20 && starleft>0 && characterTop>= 80){
-      basket.style.animation = "none";
-        basket.style.display = "none";
+      // basket.style.animation = "none";
+      //   basket.style.display = "none";
       star.style.animation = "none";
       star.style.display = "none";
       rocket.style.animation = "none";
@@ -166,19 +166,20 @@ var basketleft = parseInt(window.getComputedStyle(basket).getPropertyValue("left
       block.style.animation = "none";
         block.style.display = "none";
       alert("Jeu prêt")
-  }
-      if(basketleft<20 && basketleft>0 && characterTop>= 140){
-        basket.style.animation = "none";
-        basket.style.display = "none";
-        star.style.animation = "none";
-        star.style.display = "none";
-        rocket.style.animation = "none";
-        rocket.style.display = "none";
-        block.style.animation = "none";
-          block.style.display = "none";
-        alert("Jeu prêt")
-      }
-      },10);
+    }
+},10);
+      // if(basketleft<20 && basketleft>0 && characterTop>= 140){
+      //   basket.style.animation = "none";
+      //   basket.style.display = "none";
+      //   star.style.animation = "none";
+      //   star.style.display = "none";
+      //   rocket.style.animation = "none";
+      //   rocket.style.display = "none";
+      //   block.style.animation = "none";
+      //     block.style.display = "none";
+      //   alert("Jeu prêt")
+      // }
+      
 
 // var character = document.getElementById("character");
 // var block = document.getElementById("block");

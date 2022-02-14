@@ -737,12 +737,12 @@ top: 130px;
   animation-delay: 5s;
  
 }
-#basket{
+/* #basket{
   width: 20px;
   height: 20px;
   position: relative;
   top: 120px;
-  /* left: 100%;  */
+  
   animation: basket 5s infinite ease-out; 
   animation-delay: 0.4s;
  
@@ -751,9 +751,9 @@ top: 130px;
   0%{left: 100%;}
   100%{left: -50%;}
   100%{rotate: -360deg}
-  from { transform: translate3d(0, 0, 0);}
-  to { transform: translate3d(0, 200px, 0);}
-  }
+  from { transform: translate3d(0%);}
+  to { transform: translate3d(0, 100%, 0);}
+  } */
 
 @keyframes star{
   0%{left: 100%;}
@@ -761,7 +761,7 @@ top: 130px;
   100%{rotate: -360deg}
   0%{transform: translateY(100%);}
   
-  100%{transform: translateY(0%);}
+  100%{transform: translateY(20%);}
   
 }
 @keyframes rocket{
@@ -801,13 +801,13 @@ top: 130px;
 top: 115px;
 left: 100%; 
 }
-.fa-basketball{
+/* .fa-basketball{
   display: inline-block;
   font-size: 25px;
   position: relative;
 top: 115px;
 left: 100%;
-}
+} */
 .btnjeu{
   background: transparent;
   border: 3px solid #3e2093;
