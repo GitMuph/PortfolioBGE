@@ -709,7 +709,7 @@ top: 130px;
   100%{top: 130px;}
 }
 #block{
-  width: 20px;
+  width: 10px;
   height: 20px;
   position: relative;
   top: 130px;
@@ -718,7 +718,7 @@ top: 130px;
   animation-delay: 1s;
 }
 #rocket{
-  width: 20px;
+  width: 10px;
   height: 20px;
   position: relative;
   top: 130px;
@@ -728,7 +728,7 @@ top: 130px;
   
 }
 #star{
-  width: 20px;
+  width: 10px;
   height: 20px;
   position: relative;
   top: 120px;
