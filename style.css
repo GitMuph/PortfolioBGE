@@ -86,21 +86,6 @@ nav {
   }
 } 
 
-/* .btn {
-   border: 1px solid #3e2093;
-  background: #3e2093; 
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  color: #fff; 
-}
-
-.btn.btn-secondary {
-  background: transparent;
-  border: 3px solid #3e2093;
-  color: #fff;
-} */
-
 
 section {
   height: 100vh;
@@ -168,20 +153,6 @@ section {
       font-size: 2rem;
   }
 
-  /* .btn {
-    border: 1px solid #3e2093;
-    background: #3e2093;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    color: #fff;
-  }
-  
-  .btn.btn-secondary {
-    background: transparent;
-    border: 3px solid #3e2093;
-    color: #fff;
-  } */
 
   .open .menu {
       transform: translateX(0);
@@ -711,18 +682,16 @@ font-size: 24px;
   border: 10px solid black;
   margin: 0 auto ;
  padding-left: 5%;
+ cursor: pointer;
 }
 #character{
 width: 20px;
 height: 50px;
-/* background-color: red; */
 position: relative;
 top: 130px;
-/* border-radius: 30%; */
-
 }
 .animate{
-   animation: spin 495ms linear infinite, jump 400ms linear ;
+   animation: spin 400ms linear infinite, jump 495ms linear ;
 }
 
 @keyframes spin { 
@@ -745,8 +714,59 @@ top: 130px;
   position: relative;
   top: 130px;
   /* left: 100%;  */
-  animation: block 1s infinite linear;
+  animation: block 2s infinite linear;
+  animation-delay: 1s;
+}
+#rocket{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  /* left: 100%;  */
+  animation: rocket 2s infinite linear; 
+  animation-delay: 2s;
   
+}
+#star{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 120px;
+  /* left: 100%;  */
+  animation: star 3.1s 2 ease-in; 
+  animation-delay: 5s;
+ 
+}
+#basket{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 120px;
+  /* left: 100%;  */
+  animation: basket 5s infinite ease-out; 
+  animation-delay: 0.4s;
+ 
+}
+@keyframes basket{
+  0%{left: 100%;}
+  100%{left: -50%;}
+  100%{rotate: -360deg}
+  from { transform: translate3d(0, 0, 0);}
+  to { transform: translate3d(0, 200px, 0);}
+  }
+
+@keyframes star{
+  0%{left: 100%;}
+  100%{left: -50%;}
+  100%{rotate: -360deg}
+  0%{transform: translateY(100%);}
+  
+  100%{transform: translateY(0%);}
+  
+}
+@keyframes rocket{
+  0%{left: 100%;}
+  100%{left: -50%;}
 }
 @keyframes block{
   0%{left: 100%;}
@@ -764,10 +784,30 @@ top: 130px;
     position: relative;
   top: 115px;
   left: 100%; 
-  animation: block 1s infinite linear;
+  /* animation: block 1s infinite linear; */
   }
-  
-
+  .fa-shuttle-space
+  {
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+  top: 115px;
+  left: 100%; 
+  }
+.fa-bahai{
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+top: 115px;
+left: 100%; 
+}
+.fa-basketball{
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+top: 115px;
+left: 100%;
+}
 .btnjeu{
   background: transparent;
   border: 3px solid #3e2093;
@@ -778,7 +818,7 @@ top: 130px;
   cursor: pointer;
   margin: 3%;
   }
- 
+
   
 
 
