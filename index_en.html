@@ -107,8 +107,8 @@
 
          <h1 class="titrejeu">Mini-jeu html/css/javascript</h1>
          <h2 class="sous-titrejeu">Tape des gros front-flip par dessus les landeaux</h2>
-         <article>
-         <div id="game" onclick="jump()"> 
+         <p id="score">Score: <span id="scoreSpan"></span></p>
+         <div id="game" onclick="jump();newscore()"> 
           <i class="fab fa-accessible-icon" id="character"></i>
           <i class="fas fa-baby-carriage" id="block"></i>
           <i class="fa-solid fa-shuttle-space fa-rotate-180" id="rocket"></i>
@@ -180,7 +180,7 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
-
+<script src="gamescript.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -818,6 +818,14 @@ left: 100%;
   cursor: pointer;
   margin: 3%;
   }
+  #score{
+    text-align: center;
+    
+  }
+  .countreset{
+    counter-reset:none;
+  }
+  
 
   
 
