@@ -674,6 +674,8 @@ font-size: 24px;
   }
 
 /* jeu */
+
+
 #game{
   padding: 0;
    overflow: hidden; 
@@ -713,7 +715,6 @@ top: 130px;
   height: 20px;
   position: relative;
   top: 130px;
-  /* left: 100%;  */
   animation: block 2s infinite linear;
   animation-delay: 1s;
 }
@@ -722,7 +723,6 @@ top: 130px;
   height: 20px;
   position: relative;
   top: 130px;
-  /* left: 100%;  */
   animation: rocket 2s infinite linear; 
   animation-delay: 2s;
   
@@ -732,30 +732,62 @@ top: 130px;
   height: 20px;
   position: relative;
   top: 120px;
-  /* left: 100%;  */
+  
   animation: star 3.1s 2 ease-in; 
   animation-delay: 5s;
  
 }
-/* #basket{
-  width: 20px;
+#star2{
+  width: 10px;
   height: 20px;
   position: relative;
   top: 120px;
-  
-  animation: basket 5s infinite ease-out; 
-  animation-delay: 0.4s;
+  animation: star2 3.1s 2 ease-in; 
+  animation-delay: 15s;
  
 }
-@keyframes basket{
+#kiwi{
+  width: 10px;
+  height: 120px;
+  position: relative;
+  top: 120px;
+  animation: kiwi 1s infinite linear; 
+  animation-delay: 1s;
+}
+
+ #wheel{
+  width: 20px;
+  height: 120px;
+  position: relative;
+  top: 120px;
+  
+  animation: wheel 1.5s 1 linear; 
+  animation-delay: 23.5s;
+ 
+}
+@keyframes wheel{
+  0%{left: 100%;}
+  100%{left: -50%;}
+  0%{rotate: 0deg;}
+  25%{rotate: 43deg;} 
+  50%{rotate: 0deg;}
+  65%{rotate: -60deg;}
+  80%{rotate: -90deg;}   
+  
+  
+
+  } 
+ 
+@keyframes star{
   0%{left: 100%;}
   100%{left: -50%;}
   100%{rotate: -360deg}
-  from { transform: translate3d(0%);}
-  to { transform: translate3d(0, 100%, 0);}
-  } */
-
-@keyframes star{
+  0%{transform: translateY(100%);}
+  
+  100%{transform: translateY(20%);}
+  
+}
+@keyframes star2{
   0%{left: 100%;}
   100%{left: -50%;}
   100%{rotate: -360deg}
@@ -784,7 +816,6 @@ top: 130px;
     position: relative;
   top: 115px;
   left: 100%; 
-  /* animation: block 1s infinite linear; */
   }
   .fa-shuttle-space
   {
@@ -801,13 +832,16 @@ top: 130px;
 top: 115px;
 left: 100%; 
 }
-/* .fa-basketball{
+
+
+ .fa-dharmachakra{
   display: inline-block;
-  font-size: 25px;
+  font-size: 40px;
   position: relative;
 top: 115px;
 left: 100%;
-} */
+transform: scale(3.5);
+} 
 .btnjeu{
   background: transparent;
   border: 3px solid #3e2093;
@@ -822,9 +856,7 @@ left: 100%;
     text-align: center;
     
   }
-  .countreset{
-    counter-reset:none;
-  }
+  
   
 
   
