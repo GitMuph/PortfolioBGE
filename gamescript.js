@@ -9,22 +9,23 @@ var counter2=0;
 
 
 function newscore(){
-  counter2+=1;
+  counter2++;
   
   document.getElementById("scoreSpan").innerHTML = counter2;
-
-
+  
+ 
 }
 function jump(){
     if(character.classList != "animate"){
     character.classList.add("animate");
-     
+    
     }
     setTimeout(function(){
         character.classList.remove("animate");
       
     },400);
 }
+
 var checkDead = setInterval(function(){
 var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -47,10 +48,11 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     star.style.animation = "none";
     star.style.display = "none";
     character.style.color = "red";
-
+    
         console.log("Jeu prêt")
         
-        document.getElementById("scoreSpan").innerHTML = counter2;
+        document.getElementById("scoreSpan").innerHTML = 0;
+return;
     }
   
     if(rocketleft<20 && rocketleft>-20 && characterTop>= 80){
@@ -69,6 +71,7 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     console.log("Jeu prêt")
 
     document.getElementById("scoreSpan").innerHTML = counter2;
+    return;
     }
     
     if(starleft<20 && starleft>-20 && characterTop>= 80){
@@ -87,7 +90,7 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     console.log("Jeu prêt")
 
     document.getElementById("scoreSpan").innerHTML = counter2 ;
-       
+    return;  
     }
     if(star2left<20 && star2left>-20 && characterTop>= 80){
     wheel.style.animation = "none ";
@@ -105,7 +108,7 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     console.log("Jeu prêt")
 
     document.getElementById("scoreSpan").innerHTML = counter2 ;
-         
+    return;     
       }
       if(wheelleft<20 && wheelleft>-20 && characterTop>= 0){
     star2.style.animation = "none ";
@@ -121,7 +124,7 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     console.log("Jeu prêt")
 
     document.getElementById("scoreSpan").innerHTML = counter2 ;
-           
+    return;       
         }
     
     },1);

@@ -716,7 +716,7 @@ top: 130px;
   position: relative;
   top: 130px;
   animation: block 2s infinite linear;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 #rocket{
   width: 10px;
@@ -724,7 +724,7 @@ top: 130px;
   position: relative;
   top: 130px;
   animation: rocket 2s infinite linear; 
-  animation-delay: 2s;
+  animation-delay: 1s;
   
 }
 #star{
@@ -734,7 +734,7 @@ top: 130px;
   top: 120px;
   
   animation: star 3.1s 2 ease-in; 
-  animation-delay: 5s;
+  animation-delay: 4s;
  
 }
 #star2{
@@ -743,17 +743,17 @@ top: 130px;
   position: relative;
   top: 120px;
   animation: star2 3.1s 2 ease-in; 
-  animation-delay: 15s;
+  animation-delay: 14s;
  
 }
-#kiwi{
+/* #kiwi{
   width: 10px;
   height: 120px;
   position: relative;
   top: 120px;
   animation: kiwi 1s infinite linear; 
   animation-delay: 1s;
-}
+} */
 
  #wheel{
   width: 20px;
@@ -762,7 +762,7 @@ top: 130px;
   top: 120px;
   
   animation: wheel 1.5s 1 linear; 
-  animation-delay: 23.5s;
+  animation-delay: 22.5s;
  
 }
 @keyframes wheel{
@@ -854,6 +854,7 @@ transform: scale(3.5);
   }
   #score{
     text-align: center;
+    
     
   }
   
