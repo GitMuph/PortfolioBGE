@@ -37,14 +37,11 @@ nav {
 }
 
 .logo {
-  font-size: 3rem;
-   margin-left: 100px;  
+  font-size: 2.5rem;
+   margin-left: 100px;
+     
 }
-@media all and (max-width: 991px){
-  .logo{
-    margin-left: 0px;
-  }
-}
+
 .toggle {
   display: none;
 }
@@ -117,6 +114,7 @@ section {
   .logo {
       position: relative;
       z-index: 20;
+      margin-left: 0px;
   }
 
   .ouvrir {
@@ -175,6 +173,9 @@ section {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #picsec2{
@@ -186,7 +187,10 @@ section {
   grid-column-start: 2;
   grid-row-start: 1;
   padding: 10%;
- font-size: 24px;
+ font-size: 2vw;
+}
+#phonemessage{
+  display: none;
 }
 @media screen and (max-width: 600px){
   #section2{
@@ -201,13 +205,20 @@ section {
   #p1{
     grid-column-start: 1;
     grid-row-start: 2;
-    font-size: 16px;
+    font-size: 4vw;
     text-align:left
   }
   #section1{
     font-size: 24px;
     text-align: center;
   }
+  #phonemessage{
+    display: block;
+    text-align: center;
+    padding: 3%;
+    font-size: 12px;
+  }
+  
 }
 #separator1{
   background: url(images/image2.jpg);
@@ -227,34 +238,60 @@ line-height: 120px;
 
 /* Slider */
 
-.slider {
-  min-height: 300px;
+/* .slider {
+  height:100%;
   background-color: #f2f2f2;
   padding: 5%;
-  width: 85%;
+  width: 75%;
   margin: 60px auto;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
 }
 .slide_elements{
-  
-  padding: 5px;
-  margin: 15px;
+align-items: center;
+justify-content: center;
+
 }
+
 .image_slide{
-  height: 200px;
+  height: 10vw;
+  justify-items: center;
+  
  } 
  @media screen and (max-width: 480px){
+   .slider{
+     
+     width: 65%;
+   }
   .image_slide{
-    height: 90%;
+    height: 10vw;
     display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
+  
   margin: auto;
-  width: 90%;
+  
 
    } 
- }
+ } */
+ .swiper {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
 /* Sous-titres compétences */
   
 
@@ -301,10 +338,7 @@ line-height: 120px;
   line-height: 120px;
   margin-top: 5%;
 }
-.tempo{
-  padding: 10%;
-  font-size: 36px;
-}
+
 #separator3{
   background: url(images/image2.jpg);
   background-attachment: fixed;
@@ -482,195 +516,164 @@ line-height: 120px;
    
  }
 }
-/* dots slider projets */
-ul.slick-dots{
-  width: 80%;
-  margin: auto;
+h3{
+  font-size: 2vw;
+  
+  
 }
-
-.slick-dots li button:before {
-  color: #ffffff;
-}
-.slick-dots li.slick-active button:before {
-  color:#ffffff !important;
-}
-/* slide projet */
-.tempo2{
+.tempo{
   padding: 10%;
   font-size: 36px;
-}  
-.slide1{
-  border: 3px solid #3e2093;
-  padding: 1%;
-  border-radius: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #fff;
-  color: #3e2093;
+  display: grid;
+  grid-template-rows: 2% 1fr 2% 1fr;
+  grid-template-columns:  1fr  1fr ;
+  justify-items: center;
+  
+  row-gap: 5vw;
+  
 }
-.slide2{
-  border: 3px solid #3e2093;
-  padding: 1%;
+.slide1{
+  width: 30vw;
+  height: 30vw;
+  border: 3px solid #fff;
+  
   border-radius: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+ 
+  background-image: url(images/portfolio_screenshot.png);
+  background-position: center;
+  background-size:cover;
+ 
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+.link {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  
+  z-index: 1;
+}
+
+.slide2{
+  width: 30vw;
+  height: 30vw;
+  border: 3px solid #fff;
+  
+  border-radius: 20px;
+  background-image: url(images/tableaux.jpg);
+  background-position: center;
+  background-size:cover;
   background-color: rgb(180, 180, 180);
+  grid-row-start: 2;
+  grid-column-start: 2;
+  text-align: center;
+  color: yellow;
+  font-size: 12px;
 }
 .slide3{
-  border: 3px solid #3e2093;
-  padding: 1%;
+  width: 30vw;
+  height: 30vw;
+  border: 3px solid #fff;
+  
   border-radius: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: rgb(120, 120, 120);
-}
-.slide4{
-  border: 3px solid #3e2093;
-  padding: 1%;
-  border-radius: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: rgb(65, 65, 65);
-}
-@media (max-width: 820px){
-  .tempo{
-font-size: 24px;
-  }
+  background-image: url(images/mini_jeu.png);
+  background-position: center;
+  background-size:cover;
 
-.tempo2{
-font-size: 24px;
+  background-color: rgb(180, 180, 180);
+  grid-row-start: 4;
+  grid-column: 1/span 2 ;
 }
+#integweb{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+#ecommerce{
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+#loisir{
+  grid-row-start: 3;
+  grid-column: 1/span 2 ;
+}
+
+
+@media (max-width: 600px){
+  .tempo{
+
+grid-template-rows: 2% 1fr 2% 1fr 2% 1fr;
+grid-template-columns: 1fr ;
+padding-top: 15%;
+padding-bottom: 5%;
+  }
+  .slide1{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    width: 70vw;
+    height: 70vw;
+  }
+  .link {
+    position: absolute;
+    width: 70vw;
+    height: 70vw;
+    
+    z-index: 1;
+  }
+  
+  .slide2{
+    grid-row-start: 4;
+  grid-column-start: 1;
+  width: 70vw;
+  height: 70vw;
+}
+  
+  .slide3{
+    grid-row-start: 6;
+  grid-column-start: 1;
+  width: 70vw;
+  height: 70vw;
+}
+#integweb{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+#ecommerce{
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+#loisir{
+  grid-row-start: 5;
+  grid-column-start: 1;
+}
+
+  h3{
+    font-size: 5vw;
+  }
+  #titrejeu{
+    font-size: 4vw !important;
+  }
+  .sous-titrejeu{
+    font-size: 3vw !important;
+  }
 }
 #foot{
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   text-align: center;
-  padding: 5px;
+  padding: 4vw;
   color: rgb(119, 119, 119);
 }
 
-/* carte présentation */ 
 
-.card-container
-{
-    
-    font-size: 20px;
-    font-weight: bold;
-
-    width: 70%;
-    height: 50%;
-    margin: 80px auto; 
-
-    border-radius: 20px;
-
-    perspective: 1400px;
-
-    
-}
-
-.card
-{
-    
-    position: relative;
-
-    height: 100%;
-    cursor: pointer;
-    border-radius: 20px;
-
-    width: 100%;
-    transform-style: preserve-3d;
-}
-
-.front,
-.back
-{
-    
-    width: 100%;
-    height: 100%;
-
-    border-radius: 20px;
-
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    
-}
-
-.front
-{
-    color: #3e2093;
-    background: #fff;
-    border: 3px solid #3e2093;
-    border-radius: 20px;
-}
-
-.back
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    transform: rotateY(180deg);
-    
-    color: #fff;
-    background: #3e2093;
-    border: 3px solid #fff;
-    border-radius: 20px;
-}
-#cardhead{
-  width: 100%;
-  background: #3e2093;
-  border-radius: 20px 20px 0px 0px;
-  text-align: center;
-  height: 4vh; 
-  color: #fff;
-  padding: 2%;
-}
-#cardheadB{
-  
-  width: 100%;
-  border-bottom: #fff 3px solid;
-  color: #fff;
-  background: #3e2093;
-  border-radius: 20px 20px 0px 0px;
-  text-align: center;
-  
-  height: 4vh; 
-  
-}
-.fa-linkedin{
-  font-size: 30px;
-  padding-left: 10%;
-  padding-top: 10%;
-}
-.lienLinkedin{
-  text-decoration: none;
-  color: #F0F1F8;
-  font-family: sans-serif;
-}
-.lienLinkedin:hover{
-  border-bottom: 1px solid #fff;
-}
-.fa-facebook{
-  font-size: 30px;
-  padding-left: 10%;
-  padding-top: 10%;
-}
-.lienfb{
-  text-decoration: none;
-  color: #F0F1F8;
-  font-family: sans-serif;
-}
-.lienfb:hover{
-  border-bottom: 1px solid #fff;
-}
-
- .titrejeu{
+ #titrejeu{
     text-align: center;
     padding: 3%;
+    font-size: 2.5vw;
   }
+
   .sous-titrejeu{
     text-align: center;
     padding: 3%;
+    font-size: 2vw;
   }
 
 /* jeu */
@@ -856,6 +859,9 @@ transform: scale(3.5);
     text-align: center;
     
     
+  }
+  #linkedin{
+    font-family: sans-serif;
   }
   
   

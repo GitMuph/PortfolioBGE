@@ -1,24 +1,24 @@
  /* anim carte */
 
-let playing = false;
-let card = document.querySelector(".card");
+// let playing = false;
+// let card = document.querySelector(".card");
 
-card.addEventListener('click',function() {
-  if(playing)
-    return;
+// card.addEventListener('click',function() {
+//   if(playing)
+//     return;
   
-  playing = true;
-  anime({
-    targets: card,
-    scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
-    rotateY: {value: '+=180', delay: 200},
-    easing: 'easeInOutSine',
-    duration: 400,
-    complete: function(anim){
-       playing = false;
-    }
-  });
-});
+//   playing = true;
+//   anime({
+//     targets: card,
+//     scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+//     rotateY: {value: '+=180', delay: 200},
+//     easing: 'easeInOutSine',
+//     duration: 400,
+//     complete: function(anim){
+//        playing = false;
+//     }
+//   });
+// });
  
  /* menu */
 let toggle = document.querySelector('.toggle');
@@ -51,45 +51,66 @@ function change() {
     });
 }
 /* slider */
-$('.slider').slick({
-     dots: false,
-    arrows: true,
-    infinite: true,
-    speed: 1000,
-    autoplay:true,
-    useCSS: true,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+// $('.slider').slick({
+//      dots: false,
+//     arrows: true,
+//     infinite: true,
+//     speed: 1000,
+//     autoplay:true,
+//     useCSS: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     responsive: [
+//       {
+//         breakpoint: 1100,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2,
+//           infinite: true,
+//           dots: false
+//         }
+//       },
+//       {
+//         breakpoint: 800,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }
   
+//     ]
+//   });
+  
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'hozizontal',
+//   loop: true,
+//   autoplay : true,
+
+
+//   //  pagination: {
+//   //    el: '.swiper-pagination',
+//   //  },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+   
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+// });
+
 /* CV */
 $(document).ready(function(){
 	$('.togglebtn').click(function(){
@@ -99,19 +120,13 @@ $(document).ready(function(){
 
 /* sliders projets */
 
-$('.tempo').slick({
-  arrows: false,
-  dots:true,
-  autoplay: true,
-  speed:1000
-});
+// $('.tempo').slick({
+//   arrows: false,
+//   dots:true,
+//   autoplay: true,
+//   speed:1000
+// });
 
-$('.tempo2').slick({
-  arrows: false,
-  dots:true,
-  autoplay: true,
-  speed:1000
-});
 
 
 

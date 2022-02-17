@@ -51,7 +51,7 @@ var wheelleft = parseInt(window.getComputedStyle(wheel).getPropertyValue("left")
     
         console.log("Jeu prêt")
         
-        document.getElementById("scoreSpan").innerHTML = 0;
+        document.getElementById("scoreSpan").innerHTML = counter2;
 return;
     }
   

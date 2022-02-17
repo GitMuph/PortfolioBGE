@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" type="text/css" href="slickstyle.css"/>   
-    
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Paul Carradine</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -22,7 +19,7 @@
         <nav >
             
             <div class="logo">
-                <i class="fab fa-product-hunt"></i>
+              <a href="#section1"><i class="fab fa-product-hunt"></i></a>
             </div>
             <div class="toggle">
                 <i class="fas fa-bars ouvrir"></i>
@@ -41,41 +38,60 @@
    
         <section id="section1">
                 <h1>Paul Carradine</h1> <br>
-                <h2> Web & mobile developper </h2>
+                <h2> Web and mobile developper in training </h2>
            
         </section>
         <section id="section2">
-          <div class="card-container">
-            <div class="card">
-              <div class="front">
-                <div id="cardhead"><p> Click the card</p></div>
-              </div>
-              <div class="back">
-                <div id="cardheadB"><p> Social medias</p></div><i class="fa-brands fa-linkedin"> <a class="lienLinkedin" href="https://www.linkedin.com/in/paul-carradine-21413a222/">Linkedin_Paul Carradine</a> </i> <br>
-                <i class="fa-brands fa-facebook"> <a class="lienfb" href="https://www.facebook.com">Facebook</a></i>
-              </div>
-            </div>
+          <div>
+            <p id="p1">Bonjour, je m'appelle Paul Carradine, je suis actuellement en reconversion professionnelle. <br><br>
+              J'ai auparavant travaillé dans le secteur de la construction en Australie pendant 3 ans en tant que poseur de systèmes d'extraction
+              d'air avec divers clients tels que l'université de Sydney, une carrière de pierre à Wollongong ou encore une exploitation de coton
+              dans la ville de Wee Waa.<br><br>
+              Passionné par l'informatique depuis toujours, j'ai décidé d'en faire mon métier lors de mon retour en France. J'ai d'abord 
+              commencé par de l'auto-formation via <a href="https://openclassrooms.com">OpenClassrooms</a> et j'ai ensuite pu intégrer la
+              formation de développeur web et web mobile avec <a href="https://bgeso.fr/">BGE Sud-ouest</a>. <br><br>
+              Welcome to my first project ! <br> <br>
+              <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/paul-carradine-21413a222/" id="linkedin">My Linkedin page</a></i>
+          </p>
+        </div>
           </div>
-                 <div id="picsec2"><img src="images/avatar.png" alt="" id="avatar"></div>
+                 <div id="picsec2"><img src="images/avatar.png" alt="my avatar" id="avatar"></div>
         </section>
+
         <div id="separator1"><h1> Skills</h1></div>
-        <!-- <section id="section3"> -->
-        <!-- <div> -->
+
+        <!-- compétences -->
+      
             <h1 id="titre_compet">The skills i'm learning</h1>
             <h2 id="titrechangeant"></h2>
-            </style>
-            <ul class="slider">
-                <li class="slide_elements"><img src="images/html_5.png" class="image_slide" alt="SWIPEZ POUR NAVIGER"></li>
-                <li class="slide_elements"><img src="images/css.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/js.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/php.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/pngegg.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/wordpress.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/figma.png" class="image_slide" alt=""></li>
-                <li class="slide_elements"><img src="images/java2.png" class="image_slide" alt=""></li>
-            </ul>
-        <!-- </div> -->
-        <!-- </section> -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/html_5.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/css.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/js.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/php.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/pngegg.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/wordpress.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/figma.png" />
+                 </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        
+        <!-- projets -->
         <div>
             <div class="buttons">
                 <button type="button" class="togglebtn">Show/Hide resume</button>
@@ -84,29 +100,20 @@
         <div id="separator2"><h1> Projects</h1></div>
         
          
-        <div class="tempo">   <p class="slide1" class="slides" >Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Saepe voluptatem accusamus quos. 
-          Quasi magnam cum, nostrum magni sint velit! Eos est quia, ab 
-          molestiae autem delectus non hic debitis excepturi.</p>
-          <p class="slide2" class="slides" >Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Saepe voluptatem accusamus quos. 
-            Quasi magnam cum, nostrum magni sint velit! Eos est quia, ab 
-            molestiae autem delectus non hic debitis excepturi.</p>
-         </div>  
+        <div class="tempo">
+          <h3 id="integweb">Front-end:</h3>
+          <div class="slide1"><a href="#section1"><span class="link"></span></a></div> 
+          <h3 id="ecommerce">E-commerce:</h3>
+          <div class="slide2"><p id="projet2">Or-et-pastels.com <br> Site de ventes de tableaux en ligne développé avec Wordpress (en cours de développement)</p></div>
+          <h3 id="loisir">Leisure:</h3>
+          <div class="slide3"><a href="#titrejeu"><span class="link"></span></a></div>
+        </div>  
         
-        <div class="tempo2">  <p class="slide3" class="slides" >Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Saepe voluptatem accusamus quos. 
-          Quasi magnam cum, nostrum magni sint velit! Eos est quia, ab 
-          molestiae autem delectus non hic debitis excepturi.</p>
-          <p class="slide4" class="slides" >Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Saepe voluptatem accusamus quos. 
-            Quasi magnam cum, nostrum magni sint velit! Eos est quia, ab 
-            molestiae autem delectus non hic debitis excepturi.</p>
-         </div>  
          <!-- jeu -->
 
-         <h1 class="titrejeu">Mini-jeu html/css/javascript</h1>
-         <h2 class="sous-titrejeu">Tape des gros front-flip par dessus les landeaux</h2>
+         <h1 id="titrejeu">Little game coded with html / css / javascript</h1>
+         <h2 class="sous-titrejeu">Avoid enemies by clicking the game window</h2>
+         <p id="phonemessage">Turn your screen horizontally for a better gaming experience </p>
          <p id="score">Score: <span id="scoreSpan"></span></p>
          <div id="game" onclick="jump();newscore()"> 
           <i class="fab fa-accessible-icon" id="character"></i>
@@ -114,15 +121,14 @@
           <i class="fa-solid fa-shuttle-space fa-rotate-180" id="rocket"></i>
           <i class="fa-solid fa-bahai" id="star"></i>
           <i class="fa-solid fa-bahai" id="star2"></i>
-          <!-- <i class="fa-solid fa-kiwi-bird fa-flip-horizontal" id"kiwi"></i>  -->
           <i class="fa-solid fa-dharmachakra" id="wheel"></i> 
-          </div>
-            <!-- </div> -->
-      <div class="buttons">
-        <form>
-          <input Type="button" class="btnjeu" value="Nouvelle partie" onClick="history.go(0)">
+        </div>
+           
+        <div class="buttons">
+          <form>
+            <input Type="button" class="btnjeu" value="New game" onClick="history.go(0)">
           </form>
-          </div>
+        </div>
          
         <div id="separator3"><h1> Contact</h1></div>
 
@@ -152,7 +158,6 @@
           </div>
           <div class="right-side">
             <div class="topic-text">Contact me</div>
-            <!-- <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p> -->
           <form action="#">
             <div class="input-box">
               <input type="text" placeholder="Name">
@@ -171,7 +176,7 @@
         </div>
       </div>
        </section>
-       <footer>the footer</footer>
+       <footer id="foot">Paul Carradine - 2022</footer>
 
 
 <script 
@@ -179,8 +184,27 @@ src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
 crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 40,
+      stretch: -50,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 
 <script src="gamescript.js"></script>
 <script src="app.js"></script>
