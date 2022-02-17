@@ -1,24 +1,4 @@
- /* anim carte */
 
-// let playing = false;
-// let card = document.querySelector(".card");
-
-// card.addEventListener('click',function() {
-//   if(playing)
-//     return;
-  
-//   playing = true;
-//   anime({
-//     targets: card,
-//     scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
-//     rotateY: {value: '+=180', delay: 200},
-//     easing: 'easeInOutSine',
-//     duration: 400,
-//     complete: function(anim){
-//        playing = false;
-//     }
-//   });
-// });
  
  /* menu */
 let toggle = document.querySelector('.toggle');
@@ -50,66 +30,7 @@ function change() {
         elem.fadeIn();
     });
 }
-/* slider */
-// $('.slider').slick({
-//      dots: false,
-//     arrows: true,
-//     infinite: true,
-//     speed: 1000,
-//     autoplay:true,
-//     useCSS: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     responsive: [
-//       {
-//         breakpoint: 1100,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//           dots: false
-//         }
-//       },
-//       {
-//         breakpoint: 800,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1
-//         }
-//       }
-  
-//     ]
-//   });
-  
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'hozizontal',
-//   loop: true,
-//   autoplay : true,
 
-
-//   //  pagination: {
-//   //    el: '.swiper-pagination',
-//   //  },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-   
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-// });
 
 /* CV */
 $(document).ready(function(){
