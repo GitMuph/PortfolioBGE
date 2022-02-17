@@ -7,10 +7,10 @@
 
 
 body {
-  font-family: sans-serif;
+  font-family:  'Karla';
   color: #fff;
-background-color: rgb(31, 31, 31);
-
+background-color: #1E1E1D;
+letter-spacing: 1px;
 }
 
 .fa-product-hunt{
@@ -26,6 +26,7 @@ header {
   color: #fff;
   padding: 0 2rem;
   z-index: 1000;
+  font-weight: bold;
 }
 
 nav {
@@ -308,7 +309,19 @@ justify-content: center;
   margin-top: 5%;
   width: 95%;
   display:none;
-  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8); */
+  padding-left: 20%;
+  padding-right: 20%;
+}
+@media screen and (max-width: 600px){
+  .myimgdivshowhide{
+    margin-top: 5%;
+    width: 95%;
+    display:none;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }
 
 /* Boutons CV */
@@ -320,11 +333,14 @@ justify-content: center;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+  margin-top: 3%;
 } 
 .togglebtn:hover{
   background-color: #3e2093;
 }
-
+.btnjeu:hover{
+  background-color: #3e2093;
+}
 .buttons{
  text-align: center;
  }
@@ -542,7 +558,7 @@ h3{
   background-image: url(images/portfolio_screenshot.png);
   background-position: center;
   background-size:cover;
- 
+ box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
   grid-row-start: 2;
   grid-column-start: 1;
 }
@@ -569,6 +585,7 @@ h3{
   text-align: center;
   color: yellow;
   font-size: 12px;
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
 }
 .slide3{
   width: 30vw;
@@ -583,6 +600,7 @@ h3{
   background-color: rgb(180, 180, 180);
   grid-row-start: 4;
   grid-column: 1/span 2 ;
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
 }
 #integweb{
   grid-row-start: 1;
@@ -853,7 +871,7 @@ transform: scale(3.5);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
-  margin: 3%;
+  margin-top: 3%;
   }
   #score{
     text-align: center;
